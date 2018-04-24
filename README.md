@@ -1,6 +1,10 @@
 # Vue PhotoSwipe  
 
-> PhotoSwipe, PhotoSwipeGallery component for Vuejs base on [PhotoSwipe](http://photoswipe.com/).
+![npm](https://img.shields.io/npm/l/express.svg)
+![npm](https://img.shields.io/npm/dt/express.svg)
+
+
+PhotoSwipe, PhotoSwipeGallery component for Vuejs base on [PhotoSwipe](http://photoswipe.com/).
 
 ## Installation  
 
