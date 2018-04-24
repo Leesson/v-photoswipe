@@ -2,7 +2,7 @@
   "name": "v-photoswipe",
   "description": "Vue plugin for image preview base on PhotoSwipe",
   "main": "dist/photoswipe.min.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Leesson <shclixian@163.com>",
   "keywords": [
     "Vue", "PhotoSwipe", "image preview"
