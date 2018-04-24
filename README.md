@@ -110,9 +110,8 @@ export default {
 
 ## Slot   
 
-### PhotoSwipeGallery  
+### PhotoSwipeGallery    
 
-默认插槽，缩略图渲染模板，可选
 | Name    | Type      | Default      | Required | Description |
 |---------|-----------|--------------|----------|-------------|
 | item    | Object    | HTML Img Tag | false    |             |
@@ -120,5 +119,5 @@ export default {
 
 ## Demo  
 
-coming soon
+coming soon...
 
