@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var pkg = require('./package.json')
 
 function resolve (dir) {
   return path.join(__dirname, dir)
@@ -7,13 +8,15 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    photoswipe: './src/index.js',
+    [pkg.name]: './src/index.js',
     demo: './demo/index.js'
   },
   output: {
     path: resolve('./dist'),
     publicPath: '/dist/',
-    filename: '[name].min.js'
+    filename: '[name].min.js',
+    library: '[name]',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
