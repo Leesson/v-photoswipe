@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: resolve('./dist'),
     publicPath: '/dist/',
-    filename: '[name].min.js',
+    filename: '[name].js',
     library: '[name]',
     libraryTarget: 'umd'
   },
@@ -30,9 +30,9 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          loaders: {
-          }
-          // other vue-loader options go here
+          compilerOptions: {
+            preserveWhitespace: false,
+          },
         }
       },
       {
@@ -61,7 +61,15 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  externals: {
+      vue: {
+          root: 'Vue',
+          commonjs: 'vue',
+          commonjs2: 'vue',
+          amd: 'vue'
+      }
+  },
+  devtool: 'source-map'
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -73,14 +81,14 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   sourceMap: true,
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
+    // new webpack.LoaderOptionsPlugin({
+    //   minimize: true
+    // })
   ])
 }
