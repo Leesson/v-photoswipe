@@ -11,13 +11,13 @@
         <div class='pswp__top-bar'>
           <div class='pswp__counter'/>
           <button class='pswp__button pswp__button--close'
-            title='关闭 (Esc)'/>
+            title='Close (Esc)'/>
           <button class='pswp__button pswp__button--share'
-            title='分享'/>
+            title='Share'/>
           <button class='pswp__button pswp__button--fs'
-            title='全屏切换'/>
+            title='Toggle fullscreen'/>
           <button class='pswp__button pswp__button--zoom'
-            title='放大/缩小'/>
+            title='Zoom in/out'/>
           <div class='pswp__preloader'>
             <div class='pswp__preloader__icn'>
               <div class='pswp__preloader__cut'>
